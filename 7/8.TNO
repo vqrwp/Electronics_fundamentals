@@ -1,0 +1,253 @@
+********************************************************************************
+***                       Micro-Cap 11.0.1.9 (32 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                         Transient Analysis of 8                          ***
+***                           12.12.2018 14:50:38                            ***
+********************************************************************************
+Limits
+======
+Time Range               5m
+Maximum Time Step        0
+Number of Points         100
+Temperature              Linear 27
+Retrace Runs             1
+Run Options              Normal
+State Variables          Zero
+Operating Point          On
+Operating Point Only     Off
+Auto Scale Ranges        On
+Accumulate Plots         Off
+Fixed Time Step          Off
+Periodic Steady State    Off
+Ignore Expression Errors Off
+
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:     $GENERIC   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV               500.000    
+CJO                2.500p   
+EG                 1.110 (*)
+FC               500.000m(*)
+IBV              100.000p(*)
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                 8.000n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                100.000m   
+N                  2.000    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 5.000G   
+RS               400.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.000n   
+VJ               700.000m   
+XTI                3.000 (*)
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:      GENERAL   
+A                  5.000    
+DC                 0.000 (*)
+F                  2.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Jfet NJF
+=============================================
+Instance:              J1   
+Using model:       2N3822   
+AF               500.128m   
+ALPHA              0.000 (*)
+BETA              28.519m   
+BETATCE            0.000 (*)
+CGD                4.191p   
+CGS                5.348p   
+FC               500.000m(*)
+IS                10.000f   
+ISR                0.000 (*)
+KF                 0.014f   
+LAMBDA            10.000m   
+M                500.000m(*)
+N                  1.000 (*)
+NR                 2.000 (*)
+PB               967.073m   
+RD                 0.000 (*)
+RS               177.128    
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+VK                 0.000 (*)
+VTO               -2.713    
+VTOTC              0.000 (*)
+XTI                3.000 (*)
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Pulse
+==========================================
+Instance:              V2   
+Using model:        PULSE   
+P1               100.000u   
+P2               110.000u   
+P3               900.000u   
+P4               910.000u   
+P5                 2.000m   
+VONE              10.000    
+VZERO            -10.000    
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1            10.008p  2            10.008m  3            10.097p 
+4            10.000  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:        $GENERIC
+
+Capacitance Terms:
+CAP                   1.903p
+
+Current Terms:
+ID                  -10.008n
+
+Resistance Terms:
+REQ                   4.975G
+
+Voltage Terms:
+VD                   -9.990 
+
+Power DC Terms:
+PD                   99.980n
+PS                    0.000 
+
+DC Pin Currents:
+Id                  -10.008n
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Jfet NJF
+============================================
+Instance:                 J1
+Using model:          2N3822
+
+Capacitance Terms:
+CGS                   5.376p
+CGD                   4.213p
+
+Conductance Terms:
+GM                   -5.399f
+GDS                 155.326m
+
+Current Terms:
+ID                  -29.435f
+
+Voltage Terms:
+VGS                  10.008m
+VDS                 -89.362f
+VGD                  10.008m
+
+Power DC Terms:
+PD                    0.295f
+PS                    0.000 
+
+DC Pin Currents:
+Ig                   29.465f
+Id                  -29.435f
+Is                   -0.030f
+
+Condition:
+State                    LIN
+
+Device Variables:
+area                  1.000 
+vds                   0.000 
+vgs                   0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1              R2              R3           V1.RS
+V                    -10.008m         10.097p         10.097p         10.008p
+Power DC Terms:
+PD                   100.159p      1.020E-028      1.999E-028      1.002E-019
+
+DC Pin Currents:
+Ir                   -10.008n          0.010f          0.020f         10.008n
+
+Device Variables:
+tc1                    0.000           0.000           0.000           0.000 
+tc2                    0.000           0.000           0.000           0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:          GENERAL
+V                     10.008p
+Power DC Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource               10.008n
+
+
+
+Operating Point for Devices of Type Pulse
+=========================================
+Instance:                  V2
+Using model:            PULSE
+V                    -10.000 
+Power DC Terms:
+PG                   100.080n
+
+DC Pin Currents:
+ISource               10.008n
+
+
